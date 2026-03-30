@@ -1,5 +1,5 @@
 <div align="center">
-<img width="1200" height="475" alt="GPUlive Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+
 
 # ⚡ GPUlive
 
@@ -12,7 +12,7 @@
 
 ## 🚀 Project Summary
 
-CGPUlive is a premium, enterprise-grade GPU cloud provider designed to empower developers, AI researchers, and businesses with scalable, high-performance compute resources. Built with a focus on speed, reliability, and ease of use, our platform offers a seamless experience from resource discovery to deployment.
+GPUlive is a premium, enterprise-grade GPU cloud provider designed to empower developers, AI researchers, and businesses with scalable, high-performance compute resources. Built with a focus on speed, reliability, and ease of use, our platform offers a seamless experience from resource discovery to deployment.
 
 ## ✨ Key Features
 
