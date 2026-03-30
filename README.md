@@ -1,16 +1,10 @@
 <div align="center">
-<img width="1200" height="475" alt="CloudGPU Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+<img width="1200" height="475" alt="GPUlive Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 
-# ⚡ CloudGPU
+# ⚡ GPUlive
 
 **High-performance GPU cloud infrastructure for AI, Machine Learning, and Research.**
 
-[![Vite](https://img.shields.io/badge/Vite-6.2.0-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![React](https://img.shields.io/badge/React-19.0.0-61DAFB?style=flat&logo=react&logoColor=white)](https://react.dev/)
-[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=flat&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.8.2-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-
-[View Demo](https://ai.studio/apps/bfda9e22-1c01-4e1c-873e-67b011a3b4c6) • [Documentation](docs/) • [Contact Us](contact/)
 
 </div>
 
@@ -18,7 +12,7 @@
 
 ## 🚀 Project Summary
 
-CloudGPU is a premium, enterprise-grade GPU cloud provider designed to empower developers, AI researchers, and businesses with scalable, high-performance compute resources. Built with a focus on speed, reliability, and ease of use, our platform offers a seamless experience from resource discovery to deployment.
+CGPUlive is a premium, enterprise-grade GPU cloud provider designed to empower developers, AI researchers, and businesses with scalable, high-performance compute resources. Built with a focus on speed, reliability, and ease of use, our platform offers a seamless experience from resource discovery to deployment.
 
 ## ✨ Key Features
 
