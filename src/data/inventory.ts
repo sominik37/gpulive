@@ -14,7 +14,7 @@ export interface Instance {
 }
 
 export const INVENTORY: Instance[] = [
-  { id: "h200-2x", name: "10x NVIDIA H200", gpus: 10, gpuType: "H200", vram: "1.4TB", vcpus: 640, ram: "5TB", storage: "50TB NVMe", price: 2.2, status: "available" },
+  { id: "gh200-2x", name: "10x NVIDIA GH200", gpus: 10, gpuType: "GH200", vram: "1.4TB", vcpus: 640, ram: "5TB", storage: "50TB NVMe", price: 2.2, status: "available" },
   { id: "h100-8x", name: "8x H100 SXM5", gpus: 8, gpuType: "H100", vram: "640GB", vcpus: 208, ram: "2TB", storage: "15TB NVMe", price: 24.99, status: "available" },
   { id: "a100-8x", name: "8x A100 SXM4", gpus: 8, gpuType: "A100", vram: "640GB", vcpus: 192, ram: "1.5TB", storage: "10TB NVMe", price: 14.99, status: "available" },
   { id: "a100-4x", name: "4x A100 PCIe", gpus: 4, gpuType: "A100", vram: "320GB", vcpus: 96, ram: "768GB", storage: "5TB NVMe", price: 7.56, status: "limited" },

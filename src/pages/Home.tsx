@@ -121,7 +121,7 @@ export default function Home() {
           <BlurFade delay={0.15}>
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass border border-white/10 text-sm font-bold text-primary mb-10 relative">
               <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              <span>H200 Clusters Now Available — 2 GPU × 5 Servers</span>
+              <span>GH200 Clusters Now Available — 2 GPU × 5 Servers</span>
               <BorderBeam size={120} duration={4} borderWidth={1.5} />
             </div>
           </BlurFade>
@@ -153,7 +153,7 @@ export default function Home() {
             </div>
           </BlurFade>
 
-          {/* Featured H200 Card */}
+          {/* Featured GH200 Card */}
           <BlurFade delay={0.6}>
             <div className="mt-20 max-w-2xl">
               <div className="relative group p-8 glass border border-primary/20 rounded-[2.5rem] overflow-hidden hover:border-primary/40 transition-colors">
@@ -168,7 +168,7 @@ export default function Home() {
                         <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
                         <span className="text-[10px] font-black text-primary uppercase tracking-[0.2em]">Hot Inventory</span>
                       </div>
-                      <h4 className="font-black text-2xl tracking-tighter text-white italic">10x NVIDIA H200</h4>
+                      <h4 className="font-black text-2xl tracking-tighter text-white italic">10x NVIDIA GH200</h4>
                       <p className="text-muted font-bold text-sm">2 GPU × 5 Servers · Instant Bare Metal</p>
                     </div>
                   </div>
@@ -179,7 +179,7 @@ export default function Home() {
                         USD / GPU<br />per hr
                       </span>
                     </div>
-                    <Link to="/reserve?id=h200-2x" className="group/btn inline-flex items-center gap-2 text-white text-xs font-black uppercase tracking-[0.2em] px-4 py-2 hover:text-primary transition-all">
+                    <Link to="/reserve?id=gh200-2x" className="group/btn inline-flex items-center gap-2 text-white text-xs font-black uppercase tracking-[0.2em] px-4 py-2 hover:text-primary transition-all">
                       Deploy Now <ArrowRight className="w-3 h-3 group-hover/btn:translate-x-1 transition-transform" />
                     </Link>
                   </div>

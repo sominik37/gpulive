@@ -73,7 +73,7 @@ export default function DataCenter() {
         <div className="glass border border-white/5 rounded-3xl p-10 mb-24">
           <h3 className="text-2xl font-black mb-8 italic tracking-tight">Eligible Hardware</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {["NVIDIA H100", "NVIDIA A100", "NVIDIA H200", "NVIDIA A100 PCIe", "RTX 4090", "RTX A6000", "RTX A5000", "A40"].map((hw) => (
+            {["NVIDIA H100", "NVIDIA A100", "NVIDIA GH200", "NVIDIA A100 PCIe", "RTX 4090", "RTX A6000", "RTX A5000", "A40"].map((hw) => (
               <div key={hw} className="flex items-center gap-2 p-4 bg-white/5 rounded-2xl">
                 <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
                 <span className="text-sm font-bold text-white/80">{hw}</span>

@@ -13,7 +13,7 @@ const SOLUTIONS = [
     color: "text-primary",
     bg: "bg-primary/10",
     border: "border-primary/20",
-    tags: ["H100 SXM5", "H200", "NDR InfiniBand", "LLM Training"],
+    tags: ["H100 SXM5", "GH200", "NDR InfiniBand", "LLM Training"],
   },
   {
     Icon: Zap,

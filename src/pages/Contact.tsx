@@ -143,7 +143,7 @@ export default function Contact() {
 
                     <div className="space-y-3">
                       <label className="text-[10px] font-black text-muted uppercase tracking-[0.2em]">Tell us about your workload</label>
-                      <textarea required rows={4} placeholder="I need to train a 70B parameter model with H200s..." className="w-full px-5 py-4 bg-white/5 border border-white/5 rounded-2xl text-white focus:outline-none focus:border-primary/50 transition-all resize-none font-medium text-sm" value={formData.workload} onChange={e => setFormData({...formData, workload: e.target.value})}></textarea>
+                      <textarea required rows={4} placeholder="I need to train a 70B parameter model with GH200s..." className="w-full px-5 py-4 bg-white/5 border border-white/5 rounded-2xl text-white focus:outline-none focus:border-primary/50 transition-all resize-none font-medium text-sm" value={formData.workload} onChange={e => setFormData({...formData, workload: e.target.value})}></textarea>
                     </div>
 
                     <div className="space-y-3">

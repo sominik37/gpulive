@@ -45,7 +45,7 @@ function SpecItem({ icon: Icon, label, value }: { icon: React.ElementType; label
   );
 }
 
-function InventoryCard({ instance, index }: { instance: Instance; index: number }) {
+function InventoryCard({ instance, index }: { instance: Instance; index: number; key?: string | number }) {
   return (
     <BlurFade delay={0.1 + index * 0.05}>
       <div className="group relative glass border border-white/5 rounded-3xl p-8 h-full flex flex-col hover:bg-white/5 transition-all overflow-hidden">
@@ -101,10 +101,10 @@ export default function Inventory() {
 
   const uniqueGpus = Array.from(new Set(INVENTORY.map((i) => i.gpuType)));
 
-  const h200 = INVENTORY.find((i) => i.gpuType === "H200");
+  const gh200 = INVENTORY.find((i) => i.gpuType === "GH200");
 
   const filteredInventory = INVENTORY.filter((instance) => {
-    if (instance.gpuType === "H200") return false; // rendered separately
+    if (instance.gpuType === "GH200") return false; // rendered separately
     const matchesSearch =
       instance.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       instance.gpuType.toLowerCase().includes(searchQuery.toLowerCase());
@@ -112,11 +112,11 @@ export default function Inventory() {
     return matchesSearch && matchesFilter;
   });
 
-  // If search/filter matches H200, include it at the top of regular grid
-  const h200MatchesFilter =
-    h200 &&
-    (searchQuery === "" || h200.name.toLowerCase().includes(searchQuery.toLowerCase()) || "h200".includes(searchQuery.toLowerCase())) &&
-    (filterGpu === "all" || filterGpu === "H200");
+  // If search/filter matches GH200, include it at the top of regular grid
+  const gh200MatchesFilter =
+    gh200 &&
+    (searchQuery === "" || gh200.name.toLowerCase().includes(searchQuery.toLowerCase()) || "gh200".includes(searchQuery.toLowerCase())) &&
+    (filterGpu === "all" || filterGpu === "GH200");
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
@@ -133,8 +133,8 @@ export default function Inventory() {
         </div>
       </BlurFade>
 
-      {/* ── Featured H200 Card ── */}
-      {h200 && h200MatchesFilter && (
+      {/* ── Featured GH200 Card ── */}
+      {gh200 && gh200MatchesFilter && (
         <BlurFade delay={0.15}>
           <div className="mb-12 relative group overflow-hidden rounded-[2.5rem] border border-primary/30 bg-gradient-to-br from-primary/10 via-black to-violet-500/5 p-10 md:p-14">
             {/* Glow */}
@@ -151,22 +151,22 @@ export default function Inventory() {
                     <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
                     Featured · Hot Inventory
                   </div>
-                  <StatusBadge status={h200.status} />
+                  <StatusBadge status={gh200.status} />
                 </div>
 
                 <h2 className="text-4xl md:text-5xl font-black italic tracking-tighter text-white mb-3">
-                  {h200.name}
+                  {gh200.name}
                 </h2>
                 <p className="text-muted font-bold text-lg mb-10">
-                  {h200.gpus}x NVIDIA H200 SXM · {h200.vram} HBM3e · 2 GPU × 5 Servers Available
+                  {gh200.gpus}x NVIDIA GH200 SXM · {gh200.vram} HBM3e · 2 GPU × 5 Servers Available
                 </p>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                   {[
-                    { icon: MemoryStick, label: "VRAM", value: h200.vram },
-                    { icon: Microchip, label: "vCPUs", value: `${h200.vcpus} Cores` },
-                    { icon: MemoryStick, label: "System RAM", value: h200.ram },
-                    { icon: HardDrive, label: "NVMe Storage", value: h200.storage },
+                    { icon: MemoryStick, label: "VRAM", value: gh200.vram },
+                    { icon: Microchip, label: "vCPUs", value: `${gh200.vcpus} Cores` },
+                    { icon: MemoryStick, label: "System RAM", value: gh200.ram },
+                    { icon: HardDrive, label: "NVMe Storage", value: gh200.storage },
                   ].map((s) => (
                     <div key={s.label} className="space-y-1.5">
                       <div className="flex items-center gap-1.5 text-muted">
@@ -192,7 +192,7 @@ export default function Inventory() {
                 <div className="text-right">
                   <div className="text-[10px] font-black text-muted uppercase tracking-[0.2em] mb-2">Price Per GPU</div>
                   <div className="flex items-baseline gap-2">
-                    <span className="text-6xl font-black text-white tracking-tighter italic">${h200.price.toFixed(2)}</span>
+                    <span className="text-6xl font-black text-white tracking-tighter italic">${gh200.price.toFixed(2)}</span>
                     <span className="text-lg font-bold text-muted">/hr</span>
                   </div>
                   <div className="text-[10px] font-black text-primary/70 uppercase tracking-widest mt-1">Bare metal · No overhead</div>
@@ -200,7 +200,7 @@ export default function Inventory() {
 
                 <div className="flex flex-col gap-3 w-full lg:w-auto">
                   <Link
-                    to={`/reserve?id=${h200.id}`}
+                    to={`/reserve?id=${gh200.id}`}
                     className="group/btn relative flex items-center justify-center gap-3 px-10 py-5 bg-white text-black rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-primary transition-all hover:scale-105 active:scale-95 overflow-hidden min-w-[220px]"
                   >
                     <span className="relative z-10">Reserve Now</span>
@@ -261,7 +261,7 @@ export default function Inventory() {
         ))}
       </div>
 
-      {filteredInventory.length === 0 && !h200MatchesFilter && (
+      {filteredInventory.length === 0 && !gh200MatchesFilter && (
         <BlurFade delay={0.1}>
           <div className="py-32 text-center glass border border-white/5 rounded-3xl mt-12 group">
             <Cpu className="w-20 h-20 text-muted mx-auto mb-6 group-hover:text-primary transition-colors group-hover:scale-110 duration-500" />

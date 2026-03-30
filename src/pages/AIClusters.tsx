@@ -5,7 +5,7 @@ import { BlurFade } from "../components/ui/blur-fade";
 import { BorderBeam } from "../components/ui/border-beam";
 
 const SPECS = [
-  { icon: Cpu, label: "NVIDIA HGX™ H100 / H200 / B200", desc: "Latest Hopper & Blackwell silicon, NVLink-connected within each node." },
+  { icon: Cpu, label: "NVIDIA HGX™ H100 / GH200 / B200", desc: "Latest Hopper & Blackwell silicon, NVLink-connected within each node." },
   { icon: Network, label: "NVIDIA Quantum-2 NDR InfiniBand", desc: "3.2 Tb/s non-blocking fabric — zero bandwidth tax across thousands of GPUs." },
   { icon: Database, label: "Lustre / Weka Parallel FS", desc: "NVMe-backed shared storage delivering sustained 100+ GB/s across every node." },
   { icon: Zap, label: "Liquid-Cooled, 100kW+ per Rack", desc: "Thermal headroom engineered so your GPUs always boost to TDP." },
