@@ -1,0 +1,5 @@
+{
+  "name": "CloudGPU",
+  "description": "High-performance GPU cloud provider for AI and machine learning.",
+  "requestFramePermissions": []
+}
